@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --brightbgblack: #191918;
+  --lighbgblack: #1d1d1d;
+  --service: #2a2a2a;
+  --font: #8b5cf6;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-message {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.logout-link {
+  float: right;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.logout-link:hover {
+  color: var(--color-primary-dark);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.table-container {
+  background: var(--color-bg-secondary);
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  /* Allows horizontal scrolling for large tables */
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #374151;
+  /* Darker border for rows */
+  color: var(--color-text);
+}
+
+th {
+  background-color: #2d3748;
+  /* Slightly lighter background for headers */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  position: sticky;
+  /* Make headers sticky for long tables */
+  top: 0;
+  z-index: 1;
+}
+
+tr:hover {
+  background-color: #252d3c;
+  /* Slight hover effect for rows */
+}
+
+td {
+  font-size: 0.875rem;
+}
+
+/* Styling for empty table message */
+.no-data-message {
+  text-align: center;
+  padding: 2rem;
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+}
